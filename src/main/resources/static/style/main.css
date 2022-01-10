@@ -1,0 +1,159 @@
+body {
+    background: url(../images/background.jpeg) no-repeat fixed center/cover;
+}
+.navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    border-top: 8px solid #ffffff;
+    padding: 5px 32px 0px 32px;
+    line-height: 1.08333333;
+    height: auto;
+}
+.navbar-brand:before {
+    position: absolute;
+    content: '';
+    left: -8px;
+    top: -8px;
+    width: 8px;
+    bottom: 12px;
+    background: #ffffff;
+}
+.navbar-brand:after {
+    position: absolute;
+    content: '';
+    right: -8px;
+    top: -8px;
+    width: 8px;
+    bottom: 12px;
+    background: #ffffff;
+}
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar-header + h3 {
+    margin-top: 61px;
+}
+.navbar-header {
+    text-align: center;
+}
+.small-lines:before {
+    position: absolute;
+    content: '';
+    left: -40px;
+    height: 8px;
+    bottom: 12px;
+    width: 8%;
+    background: #ffffff;
+}
+.small-lines:after {
+    position: absolute;
+    content: '';
+    right: -40px;
+    height: 8px;
+    bottom: 12px;
+    width: 8%;
+    background: #ffffff;
+}
+.small-lines1:before {
+    width: 38%;
+    background: #009fb6;
+}
+.small-lines1:after {
+    width: 38%;
+    background: #009fb6;
+}
+.navbar-brand a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 48px;
+}
+.container{
+    margin-top: 10px;
+}
+
+small {
+    color: white;
+    line-height: 1.2;
+    font-size: 24px;
+    letter-spacing: 4.8px;
+    display: block;
+    position: relative;
+}
+
+.home-page-login {
+    padding-top: 200px;
+}
+
+.header-username {
+    margin-top: 28px;
+    font-size: 24px;
+    color: white;
+}
+
+.logout-area {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dashboard-content {
+    height: 500px !important;
+    overflow: auto;
+}
+
+.current-playing-box,
+.dashboard-content {
+    border: 5px solid #9e999d;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    height: 100%;
+}
+
+.current-playing-box,
+.dashboard-menu,
+.dashboard-content {
+    text-align: center;
+    color: white;
+}
+
+.dashboard-btn {
+    color: white;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.currentTrack-img {
+    width: 150px;
+    height: 150px;
+}
+
+.dashboard-card {
+    background-color: transparent;
+    border: none;
+}
+
+.dashboard-topTrack-title {
+    font-weight: 700 !important;
+    width: 100%;
+    text-align: start;
+}
+
+.dashboard-topTrack-artist {
+    width: 100%;
+    text-align: end;
+}
+
+.dashboard-topTrack-list {
+    width: 90%;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: white;
+    border: none;
+}

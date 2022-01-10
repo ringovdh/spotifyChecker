@@ -14,7 +14,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler({ Exception.class })
     protected ResponseEntity<Object> handleNotFound(
             Exception ex, WebRequest request) {
-        return handleExceptionInternal(ex, "statistics not found",
+        return handleExceptionInternal(ex, "Ringo says: " + ex.getMessage(),
                 new HttpHeaders(), HttpStatus.NOT_FOUND, request);
     }
 }

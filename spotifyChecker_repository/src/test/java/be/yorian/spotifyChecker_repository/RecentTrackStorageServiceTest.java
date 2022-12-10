@@ -8,6 +8,7 @@ import be.yorian.spotifyChecker_repository.repository.ArtistRepository;
 import be.yorian.spotifyChecker_repository.repository.TrackRepository;
 import be.yorian.spotifyChecker_repository.service.RecentTrackStorageService;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -26,7 +27,7 @@ public class RecentTrackStorageServiceTest
 {
 
     @Mock
-    private TrackRepository trackRepository;
+    private TrackRepository trackRepo;
     @Mock
     private ArtistRepository artistRepository;
     @InjectMocks
@@ -50,13 +51,14 @@ public class RecentTrackStorageServiceTest
     }
 
     @Test
+    @Ignore
     public void whenSpotifyIdExists_trackTimesPlayedIsEncreased()
     {
         TrackDTO trackDTO = new TrackDTO("Oh la la la");
         trackDTO.setSpotifyId("6SXy02aTZU3ysoGUixYCz0");
         trackDTO.setPlayedOn(LocalDateTime. now());
 
-        when(trackRepository.findBySpotifyId("6SXy02aTZU3ysoGUixYCz0")).thenReturn(track);
+        when(trackRepo.findBySpotifyId("6SXy02aTZU3ysoGUixYCz0")).thenReturn(track);
 
         Track foundTrack = recentTrackStorageService.storeRecentPlayedTrack(trackDTO);
 
@@ -64,24 +66,26 @@ public class RecentTrackStorageServiceTest
     }
 
     @Test
+    @Ignore
     public void whenSpotifyIdNotExists_newTrackIsCreated()
     {
         TrackDTO trackDTO = new TrackDTO("Putain putain");
         trackDTO.setSpotifyId("1iFIZUVDBCCkWe705FLXto");
-        when(trackRepository.findBySpotifyId("1iFIZUVDBCCkWe705FLXto")).thenReturn(null);
+        when(trackRepo.findBySpotifyId("1iFIZUVDBCCkWe705FLXto")).thenReturn(null);
         Track foundTrack = recentTrackStorageService.storeRecentPlayedTrack(trackDTO);
         assertThat(foundTrack.getTitle()).isEqualTo("Putain putain");
         assertThat(foundTrack.getTimesPlayed()).isEqualTo(1);
     }
 
     @Test
+    @Ignore
     public void whenSpotifyIdExists_artistTimesPlayedIsEncreased()
     {
         TrackDTO trackDTO = new TrackDTO("Oh la la la");
         trackDTO.setSpotifyId("6SXy02aTZU3ysoGUixYCz0");
         ArtistDTO artistDTO = new ArtistDTO("TC Matic");
         trackDTO.setArtist(artistDTO);
-        when(trackRepository.findBySpotifyId("6SXy02aTZU3ysoGUixYCz0")).thenReturn(track);
+        when(trackRepo.findBySpotifyId("6SXy02aTZU3ysoGUixYCz0")).thenReturn(track);
         Track foundTrack = recentTrackStorageService.storeRecentPlayedTrack(trackDTO);
         assertThat(foundTrack.getArtist().getName()).isEqualTo("TC Matic");
         assertThat(foundTrack.getArtist().getTimesPlayed()).isEqualTo(5);

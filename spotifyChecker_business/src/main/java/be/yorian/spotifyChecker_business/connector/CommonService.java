@@ -1,4 +1,4 @@
-package be.yorian.spotifyChecker_connector.service;
+package be.yorian.spotifyChecker_business.connector;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

@@ -1,6 +1,6 @@
 package be.yorian.spotifyChecker_business.controller;
 
-import be.yorian.spotifyChecker_connector.service.TopService;
+import be.yorian.spotifyChecker_business.connector.TopService;
 import be.yorian.spotifyChecker_model.dto.TopArtistsDTO;
 import be.yorian.spotifyChecker_model.dto.TopTracksDTO;
 import org.springframework.beans.factory.annotation.Autowired;

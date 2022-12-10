@@ -7,7 +7,6 @@
     <modules>
         <module>spotifyChecker_model</module>
         <module>spotifyChecker_repository</module>
-        <module>spotifyChecker_connector</module>
         <module>spotifyChecker_business</module>
         <module>spotifyChecker_frontend</module>
     </modules>

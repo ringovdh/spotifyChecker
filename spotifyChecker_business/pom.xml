@@ -35,11 +35,6 @@
             <artifactId>spotifyChecker_repository</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>be.yorian</groupId>
-            <artifactId>spotifyChecker_connector</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>

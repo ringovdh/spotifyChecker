@@ -1,4 +1,4 @@
-package be.yorian.spotifyChecker_connector.service;
+package be.yorian.spotifyChecker_business.connector;
 
 import be.yorian.spotifyChecker_model.dto.ArtistDTO;
 import be.yorian.spotifyChecker_model.dto.TopTracksDTO;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 @Service
-public class ConnectorPlayerService extends CommonService{
+public class ConnectorPlayerService extends CommonService {
 
     private static final String URL = "https://api.spotify.com/v1/me/player/";
 

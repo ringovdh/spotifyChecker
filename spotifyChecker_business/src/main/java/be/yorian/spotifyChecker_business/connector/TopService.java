@@ -1,4 +1,4 @@
-package be.yorian.spotifyChecker_connector.service;
+package be.yorian.spotifyChecker_business.connector;
 
 import be.yorian.spotifyChecker_model.dto.ArtistDTO;
 import be.yorian.spotifyChecker_model.dto.TopArtistsDTO;

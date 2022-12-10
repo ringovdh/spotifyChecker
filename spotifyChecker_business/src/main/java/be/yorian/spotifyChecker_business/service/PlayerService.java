@@ -1,6 +1,6 @@
 package be.yorian.spotifyChecker_business.service;
 
-import be.yorian.spotifyChecker_connector.service.ConnectorPlayerService;
+import be.yorian.spotifyChecker_business.connector.ConnectorPlayerService;
 import be.yorian.spotifyChecker_model.dto.TopTracksDTO;
 import be.yorian.spotifyChecker_model.dto.TrackDTO;
 import be.yorian.spotifyChecker_repository.controller.MostPlayedTracksController;

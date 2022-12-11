@@ -1,4 +1,4 @@
-package be.yorian.spotifyChecker_model.response;
+package be.yorian.spotifyChecker_frontend.entity;
 
 import java.util.ArrayList;
 import java.util.List;

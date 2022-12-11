@@ -1,6 +1,6 @@
 package be.yorian.spotifyChecker_frontend.service;
 
-import be.yorian.spotifyChecker_model.response.SpotifyTopTracks;
+import be.yorian.spotifyChecker_frontend.entity.SpotifyTopTracks;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

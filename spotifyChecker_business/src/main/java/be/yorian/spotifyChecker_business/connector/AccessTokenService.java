@@ -1,6 +1,6 @@
 package be.yorian.spotifyChecker_business.connector;
 
-import be.yorian.spotifyChecker_model.dto.SpotifyAccessTokenDTO;
+import be.yorian.spotifyChecker_business.dto.SpotifyAccessTokenDTO;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

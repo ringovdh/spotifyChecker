@@ -1,4 +1,4 @@
-package be.yorian.spotifyChecker_model.dto;
+package be.yorian.spotifyChecker_business.dto;
 
 public class ArtistDTO {
 

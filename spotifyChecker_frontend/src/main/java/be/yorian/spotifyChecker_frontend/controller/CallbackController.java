@@ -1,6 +1,6 @@
 package be.yorian.spotifyChecker_frontend.controller;
 
-import be.yorian.spotifyChecker_model.response.SpotifyUser;
+import be.yorian.spotifyChecker_frontend.entity.SpotifyUser;
 import be.yorian.spotifyChecker_frontend.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

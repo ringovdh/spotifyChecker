@@ -1,4 +1,4 @@
-package be.yorian.spotifyChecker_repository.model;
+package be.yorian.spotifyChecker_business.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

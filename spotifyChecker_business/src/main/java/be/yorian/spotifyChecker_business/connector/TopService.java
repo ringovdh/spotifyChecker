@@ -1,9 +1,9 @@
 package be.yorian.spotifyChecker_business.connector;
 
-import be.yorian.spotifyChecker_model.dto.ArtistDTO;
-import be.yorian.spotifyChecker_model.dto.TopArtistsDTO;
-import be.yorian.spotifyChecker_model.dto.TopTracksDTO;
-import be.yorian.spotifyChecker_model.dto.TrackDTO;
+import be.yorian.spotifyChecker_business.dto.ArtistDTO;
+import be.yorian.spotifyChecker_business.dto.TopArtistsDTO;
+import be.yorian.spotifyChecker_business.dto.TopTracksDTO;
+import be.yorian.spotifyChecker_business.dto.TrackDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
-package be.yorian.spotifyChecker_repository.repository;
+package be.yorian.spotifyChecker_business.repository;
 
-import be.yorian.spotifyChecker_repository.model.Track;
+import be.yorian.spotifyChecker_business.entity.Track;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
